@@ -4,6 +4,7 @@ import 'package:flutter_app/page/hero_page.dart';
 import 'package:flutter_app/page/http_page.dart';
 import 'package:flutter_app/page/inherited_test_page.dart';
 import 'package:flutter_app/page/notify_page.dart';
+import 'package:flutter_app/page/platform_view_page.dart';
 import 'package:flutter_app/page/test_page.dart';
 
 class RC {
@@ -13,6 +14,7 @@ class RC {
   static const TEST_ANIM = "test_anim";
   static const TEST_HERO = "test_hero";
   static const TEST_HTTP = "test_http&method_channel";
+  static const TEST_PLATFORM = "test_platform";
 
   static final Map<String, WidgetBuilder> routerMap = {
     RC.TEST: (context) => TestPage(),
@@ -21,6 +23,7 @@ class RC {
     RC.TEST_ANIM: (context) => TestAnimPage(),
     RC.TEST_HERO: (context) => TestHeroPage(),
     RC.TEST_HTTP: (context) => TestHttpPage(),
+    RC.TEST_PLATFORM: (context) => TestPlatformPage(),
   };
 
   static RouteFactory routeFactory = (RouteSettings settings) {

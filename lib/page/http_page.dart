@@ -20,7 +20,7 @@ class _TestHttpPageState extends State<TestHttpPage> {
     return Scaffold(
       appBar: AppBar(
           title: Text(
-        "hero动画",
+        "http请求、json序列化、sp、methodChannel",
         style: TextStyle(color: Theme.of(context).textSelectionColor),
       )),
       body: _buildBody(context),
